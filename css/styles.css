@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Estilizar el header */
+header {
+    border-bottom: 1px solid #444;
+    background-color: #1a1a1a;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 5%;
+}
+
+header nav div {
+    position: absolute;
+    left: 5%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 5%;
+}
+
+
+#hero {
+    padding: 40px 5%; 
+    background-color: #1a1a1a; 
+}
+
+#hero h1 {
+    font-size: 32px; 
+    margin: 20px 0; 
+}
+
+#hero p {
+    font-size: 18px; 
+    color: #bbb; 
+}
+
+
+#hero-image {
+    margin: 0 auto; 
+    max-width: 400px; 
+    border-radius: 10px; 
+}
+
+
+#features {
+    text-align: center;
+    padding: 40px 5%;
+    background-color: #1a1a1a; 
+}
+
+#features h2 {
+    font-size: 24px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+
+.caracteristicas-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+article {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #222; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el efecto de elevación */
+    transition: transform 0.3s; /* Transición suave para el hover */
+}
+
+article:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+article img {
+    width: 200px; 
+    height: 200px; 
+    margin: 0 auto 10px; 
+    object-fit: cover;
+}
+
+article h3 {
+    font-size: 18px;
+    margin: 10px 0; 
+    color: white;
+}
+
+article p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+section {
+    padding: 40px 5%; 
+    background-color: #1a1a1a; 
+}
+
+h2 {
+    font-size: 24px;
+    color: orange; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+ul {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px;
+    padding: 0; 
+}
+
+li {
+    margin-bottom: 10px; 
+    color: #bbb; 
+}
+
+footer {
+    background-color: #222; 
+    padding: 20px; 
+    color: #bbb; 
+    text-align: center; 
+}
+footer p {
+    margin-bottom: 15px; 
+}
+
+
+/* Ajuste para tamaños de pantalla pequeños */
+@media (max-width: 768px) {
+    .caracteristicas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        max-width: 100%;
+    }
+}
