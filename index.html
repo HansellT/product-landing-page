@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone 16 Pro Max</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Navegación (Menú) -->
     <header>
         <nav aria-label="Menú principal">
-            <div>
-                <a href="./index.html" aria-label="Ir a la página de inicio">
-                    <p>iPhone 16 Pro Max</p>
-                </a>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="./index.html" aria-label="Ir a la página de inicio">
+                        <p>iPhone 16 Pro Max</p>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features" aria-current="page">Características</a></li>
+                    <li><a href="#delivery">Envíos</a></li>
+                    <li><a href="#payment-methods">Pagos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="#features" aria-current="page">Características</a></li>
-                <li><a href="#delivery">Envíos</a></li>
-                <li><a href="#payment-methods">Pagos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     
-    <!-- Contenido Principal -->
+    
     <main>
-        <!-- Sección del Héroe -->
         <section id="hero" aria-labelledby="hero-title">
             <img id="hero-image" src="./img/iphone16.jpg" alt="Imagen del iPhone 16 Pro Max mostrando su diseño premium." />
             <h1 id="hero-title">iPhone 16 Pro Max</h1>
@@ -54,6 +54,15 @@
             </div>
         </section>
         
+        <section id="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+                <img src="./img/marco.jpg" alt="Imagen del marco del iPhone 16 Pro Max">
+                <img src="./img/frontal.jpg" alt="Imagen de la frontal del iPhone 16 Pro Max">
+                <img src="./img/posterior.jpg" alt="Imagen de la parte posterior del iPhone 16 Pro Max">
+            </div>
+        </section>
+        
         <section id="delivery">
             <h2>Opciones de Envío</h2>
             <ul>
@@ -73,7 +82,6 @@
         </section>
     </main>
     
-    <!-- Pie de Página -->
     <footer id="contact">
         <h2>Contacto</h2>
         <p>Email: soporte@ishopprueba.com</p>

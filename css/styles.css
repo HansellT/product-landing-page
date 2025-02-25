@@ -1,11 +1,11 @@
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-ul,
-ol {
+ul, ol {
     list-style: none;
 }
 
@@ -27,7 +27,7 @@ body {
     text-align: center;
 }
 
-/* Estilizar el header */
+/* Header y navegación */
 header {
     border-bottom: 1px solid #444;
     background-color: #1a1a1a;
@@ -37,51 +37,70 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
     padding: 12px 5%;
 }
 
 header nav div {
-    position: absolute;
-    left: 5%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-header nav ul {
+/* Envolver el nav en un div para mayor control */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Separa la izquierda de la derecha */
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+}
+
+/* Mantiene el menú alineado a la derecha */
+.nav-menu {
+    list-style: none;
     display: flex;
     gap: 20px;
-    position: absolute;
-    right: 5%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
 }
 
 
+/* Sección héroe */
 #hero {
-    padding: 40px 5%; 
-    background-color: #1a1a1a; 
+    padding: 40px 5%;
+    background-color: #1a1a1a;
 }
 
 #hero h1 {
-    font-size: 32px; 
-    margin: 20px 0; 
+    font-size: 32px;
+    margin: 20px 0;
 }
 
 #hero p {
-    font-size: 18px; 
-    color: #bbb; 
+    font-size: 18px;
+    color: #bbb;
 }
-
 
 #hero-image {
-    margin: 0 auto; 
-    max-width: 400px; 
-    border-radius: 10px; 
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
-
+/* Sección de características */
 #features {
-    text-align: center;
     padding: 40px 5%;
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
 }
 
 #features h2 {
@@ -90,14 +109,13 @@ header nav ul {
     margin-bottom: 20px;
 }
 
-
 .caracteristicas-container {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 article {
@@ -105,26 +123,26 @@ article {
     max-width: 300px;
     text-align: center;
     padding: 20px;
-    background-color: #222; 
+    background-color: #222;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el efecto de elevación */
-    transition: transform 0.3s; /* Transición suave para el hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
 }
 
 article:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    transform: translateY(-5px);
 }
 
 article img {
-    width: 200px; 
-    height: 200px; 
-    margin: 0 auto 10px; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
     object-fit: cover;
 }
 
 article h3 {
     font-size: 18px;
-    margin: 10px 0; 
+    margin: 10px 0;
     color: white;
 }
 
@@ -133,47 +151,85 @@ article p {
     color: #bbb;
 }
 
+/* Sección de Galería */
+#gallery {
+    padding: 40px 5%;
+    background-color: #1a1a1a;
+}
+
+#gallery h2 {
+    font-size: 24px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Sección de Envíos y Pagos */
 section {
-    padding: 40px 5%; 
-    background-color: #1a1a1a; 
+    padding: 40px 5%;
+    background-color: #1a1a1a;
 }
 
 h2 {
     font-size: 24px;
-    color: orange; 
-    margin-bottom: 20px; 
-    text-align: center; 
+    color: orange;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 ul {
-    text-align: center; 
-    margin: 0 auto; 
+    text-align: center;
+    margin: 0 auto;
     max-width: 600px;
-    padding: 0; 
+    padding: 0;
 }
 
 li {
-    margin-bottom: 10px; 
-    color: #bbb; 
+    margin-bottom: 10px;
+    color: #bbb;
 }
 
+/* Footer */
 footer {
-    background-color: #222; 
-    padding: 20px; 
-    color: #bbb; 
-    text-align: center; 
+    background-color: #222;
+    padding: 20px;
+    color: #bbb;
+    text-align: center;
 }
+
 footer p {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
-
-/* Ajuste para tamaños de pantalla pequeños */
+/* Responsividad */
 @media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .caracteristicas-container {
         flex-direction: column;
         align-items: center;
     }
+
+    .gallery img {
+        max-width: 100%;
+    }
+
     article {
         max-width: 100%;
     }
