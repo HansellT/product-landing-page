@@ -242,11 +242,17 @@ footer p {
     }
 
     .nav-menu {
-        display: block; /* Quita el flex */
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+        justify-content: center;
+        gap: 10px;
+        max-width: 100%; /* Asegura que no se salga del contenedor */
+        overflow: hidden; /* Evita que el contenido sobresalga */
+        white-space: nowrap; /* Evita saltos de línea no deseados */
     }
-
+    
     .nav-menu li {
-        margin-bottom: 5px; /* Espacio entre elementos del menú */
+        display: inline-block;
     }
 
     /* Ajuste de características y galería */
