@@ -190,6 +190,8 @@ h2 {
     text-align: center;
 }
 
+
+
 ul {
     text-align: center;
     margin: 0 auto;
@@ -213,6 +215,31 @@ footer {
 footer p {
     margin-bottom: 15px;
 }
+
+/* Estilo para el botón Comprar Ahora */
+#buy {
+    background-color: #1a1a1a; /* O el color que prefieras */
+    padding: 20px;
+}
+
+
+.buy-button {
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.buy-button:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+
 
 /* Responsividad */
 @media (max-width: 768px) {
