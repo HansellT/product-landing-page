@@ -34,28 +34,22 @@ header {
     padding: 15px 0;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 5%;
-}
-
-header nav div {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Envolver el nav en un div para mayor control */
+/* Contenedor principal del nav */
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Separa la izquierda de la derecha */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 15px 30px;
 }
 
-/* Mantiene el menú alineado a la derecha */
+/* Título en el header */
+.nav-container div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -73,7 +67,6 @@ header nav div {
     color: orange;
     font-weight: bold;
 }
-
 
 /* Sección héroe */
 #hero {
@@ -190,8 +183,6 @@ h2 {
     text-align: center;
 }
 
-
-
 ul {
     text-align: center;
     margin: 0 auto;
@@ -218,10 +209,9 @@ footer p {
 
 /* Estilo para el botón Comprar Ahora */
 #buy {
-    background-color: #1a1a1a; /* O el color que prefieras */
+    background-color: #1a1a1a;
     padding: 20px;
 }
-
 
 .buy-button {
     background-color: orange;
@@ -240,14 +230,26 @@ footer p {
     transform: scale(1.05);
 }
 
-
-/* Responsividad */
+/* ✅ RESPONSIVIDAD SOLO PARA MÓVILES */
 @media (max-width: 768px) {
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
+    .nav-container {
+        display: block; /* Cambia el flex a bloque */
+        text-align: center; /* Centra los elementos */
     }
 
+    .nav-container div {
+        margin-bottom: 10px; /* Espacio entre título y menú */
+    }
+
+    .nav-menu {
+        display: block; /* Quita el flex */
+    }
+
+    .nav-menu li {
+        margin-bottom: 5px; /* Espacio entre elementos del menú */
+    }
+
+    /* Ajuste de características y galería */
     .caracteristicas-container {
         flex-direction: column;
         align-items: center;
