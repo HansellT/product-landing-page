@@ -34,200 +34,22 @@ header {
     padding: 15px 0;
 }
 
-/* Contenedor principal del nav */
+header nav ul{
+    color: orange;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px 30px;
+    padding: 15px 10px; /* Ajustado para evitar scroll */
 }
 
 /* Título en el header */
 .nav-container div {
     font-size: 20px;
     font-weight: bold;
-}
-
-/* Menú de navegación */
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    margin: 0;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: orange;
-    font-weight: bold;
-}
-
-/* Sección héroe */
-#hero {
-    padding: 40px 5%;
-    background-color: #1a1a1a;
-}
-
-#hero h1 {
-    font-size: 32px;
-    margin: 20px 0;
-}
-
-#hero p {
-    font-size: 18px;
-    color: #bbb;
-}
-
-#hero-image {
-    margin: 0 auto;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* Sección de características */
-#features {
-    padding: 40px 5%;
-    background-color: #1a1a1a;
-}
-
-#features h2 {
-    font-size: 24px;
-    color: orange;
-    margin-bottom: 20px;
-}
-
-.caracteristicas-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-article {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-}
-
-article:hover {
-    transform: translateY(-5px);
-}
-
-article img {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 10px;
-    object-fit: cover;
-}
-
-article h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: white;
-}
-
-article p {
-    font-size: 14px;
-    color: #bbb;
-}
-
-/* Sección de Galería */
-#gallery {
-    padding: 40px 5%;
-    background-color: #1a1a1a;
-}
-
-#gallery h2 {
-    font-size: 24px;
-    color: orange;
-    margin-bottom: 20px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.gallery img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-/* Sección de Envíos y Pagos */
-section {
-    padding: 40px 5%;
-    background-color: #1a1a1a;
-}
-
-h2 {
-    font-size: 24px;
-    color: orange;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-ul {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #bbb;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    padding: 20px;
-    color: #bbb;
-    text-align: center;
-}
-
-footer p {
-    margin-bottom: 15px;
-}
-
-/* Estilo para el botón Comprar Ahora */
-#buy {
-    background-color: #1a1a1a;
-    padding: 20px;
-}
-
-.buy-button {
-    background-color: orange;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-radius: 8px;
-    border: none;
-    display: inline-block;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.buy-button:hover {
-    background-color: darkorange;
-    transform: scale(1.05);
 }
 
 /* ✅ RESPONSIVIDAD SOLO PARA MÓVILES */
