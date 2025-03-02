@@ -22,7 +22,7 @@ img {
 
 body {
     font-family: Verdana, sans-serif;
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
     text-align: center;
 }
@@ -50,6 +50,15 @@ header nav ul{
 .nav-container div {
     font-size: 20px;
     font-weight: bold;
+}
+
+#hero{
+    background-color: #1a1a1a;
+    
+}
+
+footer{
+    background-color: orange;
 }
 
 /* ✅ RESPONSIVIDAD SOLO PARA MÓVILES */
