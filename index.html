@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 16 Pro Max</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class=" text-white">
+    <header>
+        <nav aria-label="Menú principal">
+            <div class="nav-container flex flex-col md:flex-row items-center justify-between p-5">
+                <div class="logo text-lg font-bold">
+                    <a href="./index.html" aria-label="Ir a la página de inicio">
+                        iPhone 16 Pro Max
+                    </a>
+                </div>
+                <ul  class="nav-menu flex flex-row gap-4 font-bold">
+                    <li><a href="#features" class="hover:underline">Características</a></li>
+                    <li><a href="#delivery" class="hover:underline">Envíos</a></li>
+                    <li><a href="#payment-methods" class="hover:underline">Pagos</a></li>
+                    <li><a href="#contact" class="hover:underline">Contacto</a></li>
+                    <li><a href="testimonios.html" class="hover:underline">Testimonios</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="features" class="py-10">
+            <h2 class="text-2xl mb-5 text-center">Características</h2>
+            <div class="caracteristicas-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-evenly">
+                <article style="background-color: #444;" class="p-10 rounded-lg shadow-md flex flex-col m-4">
+                    <img src="./img/pantalla.jpg" alt="Pantalla del iPhone 16 Pro Max" class="w-full h-full object-cover" />
+                    <h3 class="mt-2 text-lg font-semibold">Pantalla ProMotion</h3>
+                    <p class="text-sm">Una pantalla OLED de 6.9 pulgadas con 120Hz para una fluidez increíble.</p>
+                </article>
+                <article style="background-color: #444;" class="p-6 rounded-lg shadow-md flex flex-col m-4">
+                    <img src="./img/bateria.jpg" alt="Chip A18 Bionic de Apple" class="w-full h-full object-cover" />
+                    <h3 class="mt-2 text-lg font-semibold">Chip A18 Bionic</h3>
+                    <p class="text-sm">El procesador más potente jamás visto en un smartphone.</p>
+                </article>
+                <article style="background-color: #444;" class="p-6 rounded-lg shadow-md flex flex-col m-4">
+                    <img src="./img/camara.jpeg" alt="Cámaras traseras del iPhone 16 Pro Max" class="w-full h-full object-cover" />
+                    <h3 class="mt-2 text-lg font-semibold">Cámara Avanzada</h3>
+                    <p class="text-sm">Sistema de triple cámara con teleobjetivo mejorado y grabación en 8K.</p>
+                </article>
+            </div>
+        </section>
+        
+        <section id="gallery" class="py-10">
+            <h2 class="text-2xl mb-5">Galería de Imágenes</h2>
+            <div class="gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 m-5">
+                <img src="./img/marco.jpg" alt="Imagen del marco del iPhone 16 Pro Max" class="w-full" />
+                <img src="./img/frontal.jpg" alt="Imagen de la frontal del iPhone 16 Pro Max" class="w-full" />
+                <img src="./img/posterior.jpg" alt="Imagen de la parte posterior del iPhone 16 Pro Max" class="w-full" />
+            </div>
+        </section>
+
+        <section id="buy" class="py-10">
+            <a href="compras.html" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Comprar Ahora</a>
+        </section>
+        
+        <section id="delivery" class="py-10">
+            <h2 class="text-2xl mb-5">Opciones de Envío</h2>
+            <ul class="list-disc list-inside">
+                <li class="list-none">Envío a provincia: 3 a 5 días hábiles</li>
+                <li class="list-none">Envío nacional: 1 a 2 días hábiles</li>
+                <li class="list-none">Envío internacional disponible</li>
+            </ul>
+        </section>
+        
+        <section id="payment-methods" class="py-10">
+            <h2 class="text-2xl mb-5">Formas de Pago</h2>
+            <ul class="list-disc list-inside">
+                <li class="list-none">Tarjetas de crédito y débito</li>
+                <li class="list-none">PayPal</li>
+                <li class="list-none">Pagos en cuotas sin intereses</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer id="contact" class="py-10">
+        <h2 class="text-2xl mb-5">Contacto</h2>
+        <p>Email: soporte@ishopprueba.com</p>
+        <p>Teléfono: (01) 7302222</p>
+        <p>Horario de atención: Lunes a Viernes de 9 AM a 6 PM</p>
+        <ul class="list-disc list-inside">
+            <li class="list-none"><a href="#" class="hover:underline">Términos y condiciones</a></li>
+            <li class="list-none"><a href="#" class="hover:underline">Política de privacidad</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
