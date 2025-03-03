@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/testimonios.css"> 
 </head>
 
-<body class="text-white">
+<body class="bg-black text-white">
 
     <header class="bg-black p-4 flex flex-col items-center text-center">
         <h1 class="text-lg font-bold mb-2">iPhone 16 Pro Max</h1>
@@ -22,9 +22,16 @@
         </nav>
     </header>
 
-    <div class="testimonios-page flex gap-4 mx-auto my-8 w-11/12">
+    <div id="testimonios-page" class="flex flex-col md:flex-row gap-4 mx-auto my-8 w-11/12">
         
-        <main class="w-3/4 flex flex-wrap gap-4 justify-center">
+        <aside id="testimonios-page aside">
+            <h2 class="text-xl font-semibold mb-4">Menú</h2>
+            <a href="#" class="block text-orange-400 hover:text-white mb-2">Ver más testimonios</a>
+            <a href="#" class="block text-orange-400 hover:text-white mb-2">Dejar un testimonio</a>
+            <a href="#" class="block text-orange-400 hover:text-white">Soporte</a>
+        </aside>
+
+        <main class="w-full md:w-3/4 flex flex-wrap gap-4 justify-center">
             <div class="testimonio bg-gray-700 p-4 rounded-lg text-center shadow-lg w-72">
                 <img src="./img/r3.jpeg" alt="Juan Pérez" class="w-16 h-16 rounded-full mx-auto mb-2">
                 <h3 class="font-semibold">Juan Pérez</h3>
